@@ -1,0 +1,12 @@
+@WebApi_HostAddress = http://localhost:5234
+
+POST {{WebApi_HostAddress}}/payments/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "correlationId": "{{$guid}}",
+    "amount": 20.5
+}
+
+###
